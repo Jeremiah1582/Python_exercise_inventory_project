@@ -27,30 +27,26 @@ def display_products_in_range():
         print(f"{product} - {position}")
 
 # Option Menu 
-def main():
-    while True:
-        print("\n--- Inventory Management ---")
-        print("1. Display products with positions.")
-        print("2. Check product position.")
-        print("3. Display products within a range.")
-        print("4. Exit.")
-        
-        choice = input("Enter your choice: ").strip()
+while True:
+    print("\n--- Inventory Management ---")
+    print("1. Display products with positions.")
+    print("2. Check product position.")
+    print("3. Display products within a range.")
+    print("4. Exit.")
+    
+    choice = input("Enter your choice: ").strip()
 
-        if choice == '1':
-            display_product_positions()
-        elif choice == '2':
-            check_product_position()
-        elif choice == '3':
-            display_products_in_range()
-        elif choice == '4':
-            print("Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter a valid option.")
-
-if __name__ == "__main__":
-    main()
+    if choice == '1':
+        display_product_positions()
+    elif choice == '2':
+        check_product_position()
+    elif choice == '3':
+        display_products_in_range()
+    elif choice == '4':
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please enter a valid option.")
 
 # This solution provides an interactive way to:
 
