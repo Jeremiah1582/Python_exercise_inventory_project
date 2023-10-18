@@ -7,9 +7,9 @@ def display_product_positions():
 # option 2
 def check_product_position():
     product_name = input("\nEnter the name of the product to find its position: ").strip()
-    for position, product in enumerate(products, start=1):
+    for position, product in enumerate(products):
         if product.lower() == product_name.lower():
-            print(f"{product_name} is at position {position}.")
+            print(f"{product_name} is at position {position+1}.")
             break
     else:
         print("Product not found.")
